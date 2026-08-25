@@ -2,6 +2,7 @@
 <manifest>
   <remote name="github" fetch="https://github.com"/>
   <remote name="github-ssh" fetch="ssh://git@github.com"/>
+  <remote name="gitlab" fetch="https://gitlab.com" revision="seventeen"/>
   <remote name="aosp" fetch="https://android.googlesource.com" sync-c="true" sync-tags="false" review="https://android-review.googlesource.com/" revision="refs/tags/android-17.0.0_r1" />
   <remote name="pixelos-clo" fetch=".." revision="seventeen"/>
   <remote name="los" fetch="https://github.com/LineageOS" revision="lineage-24.0"/>
@@ -20,4 +21,6 @@
   <include name="snippets/lineage.xml"/>
   <!-- AOSP -->
   <include name="snippets/aosp.xml" />
+  <!-- GMS -->
+  <include name="snippets/gms.xml"/>
 </manifest>
