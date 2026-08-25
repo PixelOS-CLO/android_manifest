@@ -3,6 +3,7 @@
   <remote name="github" fetch="https://github.com"/>
   <remote name="github-ssh" fetch="ssh://git@github.com"/>
   <remote name="pixelos-clo" fetch=".." revision="seventeen"/>
+  <remote name="los" fetch="https://github.com/LineageOS" revision="lineage-24.0"/>
   <!-- CLO -->
   <remote name="clo-la" fetch="https://git.codelinaro.org/clo/la" sync-c="true" sync-tags="false"/>
   <remote name="clo-la-shallow" fetch="https://git.codelinaro.org/clo/la" sync-c="true" sync-tags="false" revision="refs/tags/LA.QSSI.17.0.r1-10300-qssi.0"/>
@@ -14,4 +15,6 @@
   <include name="snippets/obsolete.xml"/>
   <!-- PixelOS-CLO -->
   <include name="snippets/pixelos-clo.xml"/>
+  <!-- LineageOS -->
+  <include name="snippets/lineage.xml"/>
 </manifest>
