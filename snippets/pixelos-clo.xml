@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Art -->
+  <remove-project name="platform/art" />
+  <project path="art" name="PixelOS-CLO/android_art" remote="pixelos-clo" />
+  
+  <!-- Bionic -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="PixelOS-CLO/android_bionic" remote="pixelos-clo" />
+
+  <!-- Bootable Recovery -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="PixelOS-CLO/android_bootable_recovery" remote="pixelos-clo" />
+
+  <!-- Build -->
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="PixelOS-CLO/android_build" remote="pixelos-clo" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="PixelOS-CLO/android_build_soong" remote="pixelos-clo" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Development -->
+  <remove-project name="platform/development" />
+  <project path="development" name="PixelOS-CLO/android_development" remote="pixelos-clo" clone-depth="1" />
+
+  <!-- Device -->
+  <project path="device/custom/sepolicy" name="PixelOS-CLO/android_device_custom_sepolicy" remote="pixelos-clo" />
+  <remove-project name="device/qcom/sepolicy" />
+  <project path="device/qcom/sepolicy" name="PixelOS-CLO/android_device_qcom_sepolicy" remote="pixelos-clo" />
+
+  <!-- External -->
+  <remove-project name="platform/external/avb" />
+  <project path="external/avb" name="PixelOS-CLO/android_external_avb" remote="pixelos-clo" />
+  <remove-project name="platform/external/bouncycastle" />
+  <project path="external/bouncycastle" name="PixelOS-CLO/android_external_bouncycastle" remote="pixelos-clo" />
+  <remove-project name="platform/external/dng_sdk" />
+  <project path="external/dng_sdk" name="PixelOS-CLO/android_external_dng_sdk" remote="pixelos-clo" />
+  <remove-project name="platform/external/dtc" />
+  <project path="external/dtc" name="PixelOS-CLO/android_external_dtc" remote="pixelos-clo" />
+  <remove-project name="platform/external/e2fsprogs" />
+  <project path="external/e2fsprogs" name="PixelOS-CLO/android_external_e2fsprogs" remote="pixelos-clo" />
+  <remove-project name="platform/external/fastrpc" />
+  <project path="external/fastrpc" name="PixelOS-CLO/android_external_fastrpc" remote="pixelos-clo" />
+  <remove-project name="platform/external/gptfdisk" />
+  <project path="external/gptfdisk" name="PixelOS-CLO/android_external_gptfdisk" remote="pixelos-clo" />
+  <remove-project name="platform/external/libjxl" />
+  <project path="external/libjxl" name="PixelOS-CLO/android_external_libjxl" remote="pixelos-clo" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="PixelOS-CLO/android_external_mksh" remote="pixelos-clo" />
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="PixelOS-CLO/android_external_tinycompress" remote="pixelos-clo" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="PixelOS-CLO/android_external_wpa_supplicant_8" remote="pixelos-clo" />
+  <remove-project name="platform/external/zstd" />
+  <project path="external/zstd" name="PixelOS-CLO/android_external_zstd" remote="pixelos-clo" />
+ 
+  <!-- Extract utils -->
+  <project path="tools/extract-utils" name="PixelOS-CLO/android_tools_extract-utils" remote="pixelos-clo" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="PixelOS-CLO/android_frameworks_av" remote="pixelos-clo" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="PixelOS-CLO/android_frameworks_base" remote="pixelos-clo" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="PixelOS-CLO/android_frameworks_native" remote="pixelos-clo" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="PixelOS-CLO/android_frameworks_opt_telephony" remote="pixelos-clo" />
+
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/broadcom/libbt" />
+  <project path="hardware/broadcom/libbt" name="PixelOS-CLO/android_hardware_broadcom_libbt" remote="pixelos-clo" />
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="PixelOS-CLO/android_hardware_interfaces" remote="pixelos-clo" />
+  <project path="hardware/lineage/compat" name="PixelOS-CLO/android_hardware_lineage_compat" remote="pixelos-clo" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="PixelOS-CLO/android_hardware_libhardware" remote="pixelos-clo" />
+  <remove-project name="platform/hardware/nxp/nfc" />
+  <project path="hardware/nxp/nfc" name="PixelOS-CLO/android_hardware_nxp_nfc" remote="pixelos-clo" />
+  <remove-project name="platform/hardware/st/nfc" />
+  <project path="hardware/st/nfc" name="PixelOS-CLO/android_hardware_st_nfc" remote="pixelos-clo" />
+
+  <!-- Hardware qcom-caf -->
+  <remove-project name="platform/hardware/qcom/bootctrl" />
+  <project path="hardware/qcom-caf/bootctrl" name="PixelOS-CLO/android_hardware_qcom_bootctrl" remote="pixelos-clo" revision="seventeen-caf" />
+  <remove-project name="platform/hardware/qcom/thermal" />
+  <project path="hardware/qcom-caf/thermal" name="PixelOS-CLO/android_hardware_qcom_thermal" remote="pixelos-clo" />
+  <project path="hardware/qcom/wlan" name="PixelOS-CLO/android_hardware_qcom_wlan" remote="pixelos-clo" />
+  <project path="hardware/qcom-caf/wlan" name="PixelOS-CLO/android_hardware_qcom_wlan" remote="pixelos-clo" revision="seventeen-caf" />
+  <remove-project name="device/qcom/common" />
+  <project path="hardware/qcom-caf/common" name="PixelOS-CLO/android_hardware_qcom-caf_common" remote="pixelos-clo" >
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
+  </project>
+
+  <!-- Manifest -->
+  <project path="manifest" name="PixelOS-CLO/android_manifest" remote="pixelos-clo" />
+
+  <!-- Packages apps -->
+  <project path="packages/apps/ColumbusService" name="PixelOS-CLO/android_packages_apps_ColumbusService" remote="pixelos-clo" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/ParanoidSense" name="PixelOS-CLO/android_packages_apps_ParanoidSense" remote="pixelos-clo" />
+  <project path="packages/apps/Settings" name="PixelOS-CLO/android_packages_apps_Settings" remote="pixelos-clo" />
+  <project path="packages/apps/TouchGestures" name="PixelOS-CLO/android_packages_apps_TouchGestures" remote="pixelos-clo" />
+  <project path="packages/apps/Updater" name="PixelOS-CLO/android_packages_apps_Updater" remote="pixelos-clo" />
+
+  <!-- Packages modules --> 
+  <remove-project name="platform/packages/modules/adb" />
+  <project path="packages/modules/adb" name="PixelOS-CLO/android_packages_modules_adb" remote="pixelos-clo" />
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="PixelOS-CLO/android_packages_modules_Bluetooth" remote="pixelos-clo" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project path="packages/modules/Connectivity" name="PixelOS-CLO/android_packages_modules_Connectivity" remote="pixelos-clo" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <project path="packages/modules/Permission" name="PixelOS-CLO/android_packages_modules_Permission" remote="pixelos-clo" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="PixelOS-CLO/android_packages_modules_Wifi" remote="pixelos-clo" />
+
+  <!-- Packages services -->
+  <remove-project name="platform/packages/services/DeviceAsWebcam" />
+  <project path="packages/services/DeviceAsWebcam" name="PixelOS-CLO/android_packages_services_DeviceAsWebcam" remote="pixelos-clo" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="PixelOS-CLO/android_packages_services_Telecomm" remote="pixelos-clo" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <project path="packages/services/Telephony" name="PixelOS-CLO/android_packages_services_Telephony" remote="pixelos-clo" />
+
+  <!-- SDclang -->
+  <project path="vendor/qcom/sdclang" name="PixelOS-CLO/proprietary_vendor_qcom_sdclang" clone-depth="1" remote="pixelos-clo" />
+
+  <!-- System -->
+  <remove-project name="platform/system/chre" />
+  <project path="system/chre" name="PixelOS-CLO/android_system_chre" remote="pixelos-clo" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="PixelOS-CLO/android_system_core" remote="pixelos-clo" />
+  <remove-project name="platform/system/fs/fs_mgr" />
+  <project path="system/fs/fs_mgr" name="PixelOS-CLO/android_system_fs_fs_mgr" remote="pixelos-clo" />
+  <remove-project name="platform/system/libziparchive" />
+  <project path="system/libziparchive" name="PixelOS-CLO/android_system_libziparchive" remote="pixelos-clo" />
+  <remove-project name="platform/system/logging" />
+  <project path="system/logging" name="PixelOS-CLO/android_system_logging" remote="pixelos-clo" />
+  <remove-project name="platform/system/media" />
+  <project path="system/media" name="PixelOS-CLO/android_system_media" remote="pixelos-clo" />
+  <remove-project name="platform/system/memory/libmeminfo" />
+  <project path="system/memory/libmeminfo" name="PixelOS-CLO/android_system_memory_libmeminfo" remote="pixelos-clo" />
+  <remove-project name="platform/system/netd" />
+  <project path="system/netd" name="PixelOS-CLO/android_system_netd" remote="pixelos-clo" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="PixelOS-CLO/android_system_sepolicy" remote="pixelos-clo" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="PixelOS-CLO/android_system_update_engine" remote="pixelos-clo" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="PixelOS-CLO/android_system_vold" remote="pixelos-clo" />
+
+  <!-- Vendor -->
+  <project path="vendor/custom" name="PixelOS-CLO/android_vendor_custom" remote="pixelos-clo" />
+  <project path="vendor/custom-preference" name="PixelOS-CLO/android_vendor_custom-preference" remote="pixelos-clo" />
+  <project path="vendor/lineage" name="PixelOS-CLO/android_vendor_lineage" remote="pixelos-clo" />
+
+  <!-- Vendor (QCOM QSSI) -->
+  <remove-project name="platform/vendor/qcom-opensource/audio" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="PixelOS-CLO/android_vendor_qcom_opensource_commonsys_audio" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth" name="PixelOS-CLO/android_vendor_qcom_opensource_commonsys_bluetooth" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils" />
+  <project path="vendor/qcom/opensource/core-utils" name="PixelOS-CLO/android_vendor_qcom_opensource_core-utils" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/crosvm-gunyah" />
+  <project path="vendor/qcom/opensource/crosvm-gunyah" name="PixelOS-CLO/android_vendor_qcom_opensource_crosvm-gunyah" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/dataservices" />
+  <project path="vendor/qcom/opensource/dataservices" name="PixelOS-CLO/android_vendor_qcom_opensource_dataservices" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="PixelOS-CLO/android_vendor_qcom_opensource_display-commonsys-intf" remote="pixelos-clo" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="PixelOS-CLO/android_vendor_qcom_opensource_display-commonsys" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="PixelOS-CLO/android_vendor_qcom_opensource_fm-commonsys" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <project path="vendor/qcom/opensource/interfaces" name="PixelOS-CLO/android_vendor_qcom_opensource_interfaces" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/codeaurora/telephony" />
+  <project path="vendor/codeaurora/telephony" name="PixelOS-CLO/android_vendor_codeaurora_telephony" remote="pixelos-clo" />
+
+  <!-- Vendor (QCOM Vendor) -->
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="PixelOS-CLO/android_vendor_qcom_opensource_audio-hal_st-hal-ar" remote="pixelos-clo" />
+  <project path="vendor/qcom-caf/common" name="PixelOS-CLO/proprietary_vendor_qcom-caf_common" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="PixelOS-CLO/android_vendor_qcom_opensource_core-utils-vendor" remote="pixelos-clo" />
+  <project path="vendor/qcom/opensource/display" name="PixelOS-CLO/android_vendor_qcom_opensource_display" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/healthd-ext" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="PixelOS-CLO/android_vendor_qcom_opensource_healthd-ext" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="PixelOS-CLO/android_vendor_qcom_opensource_power" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <project path="vendor/qcom/opensource/usb" name="PixelOS-CLO/android_vendor_qcom_opensource_usb" remote="pixelos-clo" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="PixelOS-CLO/android_vendor_qcom_opensource_vibrator" remote="pixelos-clo" />
+  <project path="vendor/qcom/opensource/commonsys/wfd" name="PixelOS-CLO/android_vendor_qcom_opensource_wfd-commonsys" remote="pixelos-clo" />
+
+</manifest>
