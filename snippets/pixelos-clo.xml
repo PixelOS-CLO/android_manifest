@@ -80,6 +80,7 @@
 
   <!-- Hardware -->
   <remove-project name="platform/hardware/broadcom/libbt" />
+  <project path="hardware/aac/interfaces" name="PixelOS-CLO/android_hardware_aac_interfaces" remote="pixelos-clo" />
   <project path="hardware/broadcom/libbt" name="PixelOS-CLO/android_hardware_broadcom_libbt" remote="pixelos-clo" />
   <remove-project name="platform/hardware/interfaces" />
   <project path="hardware/interfaces" name="PixelOS-CLO/android_hardware_interfaces" remote="pixelos-clo" />
